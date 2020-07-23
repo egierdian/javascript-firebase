@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>EStore</title>
+    <meta name="description" content="Belanja dari rumah secara online"/>
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../images/icon.png">
+    <link rel="apple-touch-icon" href="../../images/icon.png">
+    <meta name="theme-color" content="#d81b60" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!--Bungkus content untuk preloader-->
+    <div id="content">
+      <!-- Navigasi -->
+      <nav class="pink darken-2" role="navigation">
+        <div class="nav-wrapper container" id="nav">
+          <a href="../../index.html" class="brand-logo" id="logo-container" >EStore</a>
+          <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+          <ul class="topnav right hide-on-med-and-down">
+            <li><a href="produk.html"><i class="material-icons left">description</i>Produk</a></li>
+            <li><a href="../kategori/kategori.html"><i class="material-icons left">description</i>Kategori</a></li>
+            <li><a href="" onclick="logout()"><i class="material-icons left">forward</i>Logout</a></li>
+          </ul>
+          <ul class="sidenav" id="nav-mobile">
+            <li><a href="produk.html"><i class="material-icons left">description</i>Produk</a></li>
+            <li><a href="../kategori/kategori.html"><i class="material-icons left">description</i>Kategori</a></li>
+            <li><a href="" onclick="logout()"><i class="material-icons left">forward</i>Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+
+      <!--Content-->
+      <div class="container" style="padding-top: 10px;">
+        <div class="col s12 m12 l12" style="padding-top:15px;">
+            <div class="card">
+                <div class="card-content" >
+                  <h3 style="margin-top: -5px; text-align: center;">Form Produk</h3>
+                    <div class="row">
+                        <form class="col s12" style="padding-top: 20px;">
+                          <img id="myimg" height="120px" width="120">
+                          <div class="row" style="margin: 0 2px;">
+                            <div class="file-field input-field">
+                                <div class="btn btn-small" >
+                                  <span>Pilih Gambar</span>
+                                  <input type="file" id="fileImages" multiple>
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" id="fileImages" type="text" placeholder="Upload satu atau lebih">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                                <p>Nama</p>
+                                <input id="nama_field" type="text" class="validate">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                                <p>Harga</p>
+                                <input id="harga_field" type="text" class="validate">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                                <p>Kategori</p>
+                                <input id="kategori_field" type="text" class="validate">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                                <p>Stok</p>
+                                <input id="stok_field" type="text" class="validate">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s6">
+                                <p>Berat</p>
+                                <input id="berat_field" type="text" class="validate">
+                            </div>
+                            <div class="input-field col s6">
+                                <p>Unit</p>
+                                <input id="unit_field" type="text" class="validate">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                                <p>Deskripsi</p>
+                                <input id="deskripsi_field" type="text" class="validate">
+                            </div>
+                          </div>
+                          <div class="center">
+                            <a class="waves-effect pink darken-2 btn-large" href="" id="Simpan">Ubah</a>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <!--Footer-->
+      <footer class="page-footer pink darken-2">
+        <p style="text-align: center;">© Copyright 2020 | <!--i class="material-icons">favorite</i--> temukan saya <strong><a href="https://github.com/egierdian">Erdian</a></strong></p> 
+      </footer>
+      <!--End footer-->
+
+    </div>
+
+    <!--preloader-->
+    <div class="center "id="preloader">
+      <div class="row">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end preloader-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="../../js/materialize.min.js"></script>
+    <script src="../../js/preloader.js"></script>
+    <script src="../../js/logout.js"></script>
+    
+    <script src="../js/editproduct.js"></script>
+    <script src="../js/updateproduct.js"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>

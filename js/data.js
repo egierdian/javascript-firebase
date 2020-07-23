@@ -91,7 +91,7 @@ const dataKategoriBerhasil = (data) => {
                 <div class="col s6 m3 l2" style="float:center; padding-top:15px;">
                     <div class="card" style="border-bottom: solid 2px #d81b60;">
                         <div class="card-image">
-                            <a href="/category.html?category=${konten.val().Name.replace(/"/g, '')}"><img src=${imageJadi.replace(/""/g,'')}" height="100px;"></a>
+                            <a href="/category.html?category=${konten.val().Name.replace(/"/g, '').toLowerCase()}"><img src=${imageJadi.replace(/""/g,'')}" height="100px;"></a>
                         </div>
                         
                         <div class="card-content" style="margin: -15px -10px;">

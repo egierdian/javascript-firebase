@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 else if (page === "tentang") {
                     Tentang();
                 }
+                else if (page === "daftar") {
+                    Daftar();
+                }
+                else if (page === "masuk") {
+                    Masuk();
+                }
             }
         };
         xhttp.open("GET", "pages/" + page + ".html", true);

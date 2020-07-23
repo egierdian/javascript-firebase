@@ -26,13 +26,13 @@ dataRef.on('value' , dataBerhasil , dataGagal);
 function dataBerhasil (data) {
     // console.log(data);
     let urlParam = new URLSearchParams(window.location.search);
-    let idParam = urlParam.get("category");
+    let idParam = urlParam.get("category").toLowerCase();
     // console.log(idParam);
     let tampilkan = "";
     let ambilData = document.getElementById("body-content");
         // console.log(data.val());
         data.forEach(function(konten) {
-            let c = konten.val().Category.replace(/"/g, '');
+            let c = konten.val().Category.replace(/"/g, '').toLowerCase();
             if(c == idParam){
                 // console.log(konten.val());
                 let str = konten.val().Image;

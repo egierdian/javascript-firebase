@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>EStore</title>
+    <meta name="description" content="Belanja dari rumah secara online"/>
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../images/icon.png">
+    <link rel="apple-touch-icon" href="../../images/icon.png">
+    <meta name="theme-color" content="#d81b60" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!--Bungkus content untuk preloader-->
+    <div id="content">
+      <!-- Navigasi -->
+      <nav class="pink darken-2" role="navigation">
+        <div class="nav-wrapper container" id="nav">
+          <a href="../../index.html" class="brand-logo" id="logo-container" >EStore</a>
+          <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+          <ul class="topnav right hide-on-med-and-down">
+            <li><a href="produk.html"><i class="material-icons left">description</i>Produk</a></li>
+            <li><a href="../kategori/kategori.html"><i class="material-icons left">description</i>Kategori</a></li>
+            <li><a href="" onclick="logout()"><i class="material-icons left">forward</i>Logout</a></li>
+          </ul>
+          <ul class="sidenav" id="nav-mobile">
+            <li><a href="produk.html"><i class="material-icons left">description</i>Produk</a></li>
+            <li><a href="../kategori/kategori.html"><i class="material-icons left">description</i>Kategori</a></li>
+            <li><a href="" onclick="logout()"><i class="material-icons left">forward</i>Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+
+      <!--Content-->
+      <div class="container" style="padding-top: 10px;">
+        <div class="col s12 m12 l12" style="padding-top:15px;">
+            <div class="card" style="border-bottom: solid 2px #d81b60;">
+                <div class="card-content">
+                    <a class="waves-effect pink darken-2 btn-small" href="add.html">Tambah Produk</a>
+                    <div id="data-show"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <!--Footer-->
+      <footer class="page-footer pink darken-2">
+        <p style="text-align: center;">© Copyright 2020 | <!--i class="material-icons">favorite</i--> temukan saya <strong><a href="https://github.com/egierdian">Erdian</a></strong></p> 
+      </footer>
+      <!--End footer-->
+
+    </div>
+
+    <!--preloader-->
+    <div class="center "id="preloader">
+      <div class="row">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end preloader-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="../../js/materialize.min.js"></script>
+    <script src="../../js/preloader.js"></script>
+    <script src="../../js/logout.js"></script>
+    
+    <script src="../js/product.js"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>

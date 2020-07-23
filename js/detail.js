@@ -87,7 +87,7 @@ function dataBerhasil(data) {
                                             </tr>
                                             <tr>
                                                 <td>Kategori</td>
-                                                <td>${konten.val().Category.replace(/"/g, '')}</td>
+                                                <td>${konten.val().Category.replace(/"/g,'')}</td>
                                             </tr>
                                             <tr>
                                                 <td>Berat</td>
